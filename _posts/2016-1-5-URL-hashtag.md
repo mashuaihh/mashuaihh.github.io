@@ -32,3 +32,14 @@ That looks like a good explanation, except that I still have no clue what to do 
 
 What on earth is the difference between testing using standalone Selenium and testing on Saucelabs' Selenium?
 Hope I can learn more to fix this.
+
+--------
+
+Miraculously, this line of code works around this problem.
+{% highlight javascript%}
+browser.ignoreSynchronization = false;
+{% endhighlight %}
+This line of code tells Protractor not to sync with AngularJS(not to wait for $http to finish). 
+I tried this code without really believing it would work, but it did.
+So the problem was with Angular's internal mechanism which I am still unaware of.
+But good thing is the problem is solved, and I can move on to test other stuff.
