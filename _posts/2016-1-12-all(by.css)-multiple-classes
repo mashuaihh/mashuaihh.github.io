@@ -13,3 +13,8 @@ The html is like this:
 
 How many elements will be found using "all(by.css('.class1.class2')" ?
 The answer is 3.
+
+How to find elements excluding some attributes in Protractor: 
+http://stackoverflow.com/questions/24498256/angularjs-protractor-valid-selector-for-excluding-nested-elements
+
+In Protractor, .not() in jQuery can not be used directly.
