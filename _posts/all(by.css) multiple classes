@@ -1,0 +1,15 @@
+---
+layout: post
+title: How many will 'all' find?
+---
+
+I guess this is pretty basic, but I actually wrote code to ascertain it.
+The html is like this:
+{% highlight html %}
+<div class="class1 class2 ng-hide">
+<div class="class1 class2">
+<div class="class1 class2">
+{% endhighlight %}
+
+How many elements will be found using "all(by.css('.class1.class2')" ?
+The answer is 3.
